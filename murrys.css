@@ -69,6 +69,10 @@ header {
   text-align: center;
 }
 
+
+#header-container, #address-hours-container, section {
+  max-width: 1000px;
+}
 .section-title {
   color: black;
   margin-bottom: 10px;
@@ -130,3 +134,138 @@ td {
     padding: 74px 0px 74px 0px;
   }
 }
+
+/* * * * * * * * * * * *
+ * * * * * * * * * * * *
+      > 800
+ * * * * * * * * * * * *
+ * * * * * * * * * * * */
+
+@media (min-width: 801px) {
+  #address-hours-container {
+    width: 90%;
+    margin: auto;
+    text-align: justify;
+  }
+  
+  #store-hours, #address {
+    vertical-align:top;
+    display: inline-block;
+    width: 48%;
+    height: 100%;
+  }
+  
+  #address-hours-container:after {
+  	content: "";
+  	width: 100%;
+  	display: inline-block;
+  }
+      
+  #address {
+    padding: 74px 0px 74px 0px;
+  }
+  
+/* ****************** */
+  
+  #banner {
+    width: 100%;
+    height: 70px;
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    border-bottom: 3px solid white;
+    background: #C00C30;
+    
+  }
+  
+  #telephone {
+    margin: 0;
+    padding: 0;
+    border: none;
+    background: transparent;
+  }
+
+  #tele-num {
+    color: white;
+  }
+  
+  header {
+    padding: 20px 0px 0px 0px;
+    border: none;
+    background: transparent;
+  }
+  
+  #telephone, header {
+    display: inline-block;
+    height: 100%;
+    width: auto;
+    vertical-align: bottom;
+    
+  }
+  
+  #header-container {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    text-align: justify;
+    height: 100%;
+  }
+
+  #header-container:after {
+    content: '';
+    width: 100%; /* Ensures there are at least 2 lines of text, so justification works */
+    display: inline-block;
+  }
+  
+  
+}
+
+/*
+@media (min-width: 1021px) {
+  #address-hours-container {
+    width: 1000px;
+    margin: auto;
+    text-align: justify;
+  }
+
+  #store-hours, #address {
+    vertical-align: top;
+    display: inline-block;
+    width: 48%;
+    height: 100%;
+  }
+
+  #address-hours-container:after {
+    content: "";
+    width: 100%;
+    display: inline-block;
+  }
+
+  #address {
+    padding: 74px 0px 74px 0px;
+  }
+
+  #header-container {
+    margin: auto;
+    border-bottom: 3px solid white;
+    background: #C00C30;
+  }
+
+  header{
+    text-align: left;
+    width: 1000px;
+    margin: auto;
+  }
+
+  #telephone {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    position: absolute;
+    text-align: right;
+    top: 45px;
+  }
+
+
+}*/
