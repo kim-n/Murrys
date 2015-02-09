@@ -55,6 +55,11 @@ header {
   color: white;
 }
 
+header > img {
+  height: 33px;
+  position: relative;
+  top: 5px;
+}
 #telephone, section {
   width: 90%;
   margin: auto;
