@@ -104,6 +104,10 @@ td {
   text-align: left;
 }
 
+#map {
+  height: 400px;
+}
+
 /* * * * * * * * * * * *
  * * * * * * * * * * * *
       601 ~ 800
@@ -219,53 +223,3 @@ td {
   
   
 }
-
-/*
-@media (min-width: 1021px) {
-  #address-hours-container {
-    width: 1000px;
-    margin: auto;
-    text-align: justify;
-  }
-
-  #store-hours, #address {
-    vertical-align: top;
-    display: inline-block;
-    width: 48%;
-    height: 100%;
-  }
-
-  #address-hours-container:after {
-    content: "";
-    width: 100%;
-    display: inline-block;
-  }
-
-  #address {
-    padding: 74px 0px 74px 0px;
-  }
-
-  #header-container {
-    margin: auto;
-    border-bottom: 3px solid white;
-    background: #C00C30;
-  }
-
-  header{
-    text-align: left;
-    width: 1000px;
-    margin: auto;
-  }
-
-  #telephone {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    background: transparent;
-    position: absolute;
-    text-align: right;
-    top: 45px;
-  }
-
-
-}*/

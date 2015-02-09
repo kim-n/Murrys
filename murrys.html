@@ -4,6 +4,46 @@
     <title>Murry's True Value Hardware</title>
     <link rel="stylesheet" type="text/css" href="murrys.css">
     <meta charset="UTF-8">
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+    
+    <script>
+      function initialize() {
+        var mapCanvas = document.getElementById('map');
+        var storeLatLang = new google.maps.LatLng(40.641542, -73.936557);
+        var mapOptions = {
+          center: storeLatLang,
+          zoom: 17,
+          mapTypeId: google.maps.MapTypeId.SATTELLITE,
+          backgroundColor: "white",
+          mapMarker: true
+        };
+        var map = new google.maps.Map(mapCanvas, mapOptions);
+
+
+        var marker = new google.maps.Marker({
+          position: map.getCenter(),
+          icon: {
+            path: google.maps.SymbolPath.CIRCLE,
+            strokeColor: '#FF0000',
+            strokeOpacity: 1,
+            strokeWeight: 20,
+            fillColor: 'black',            
+            fillOpacity: 1,
+            scale: 4
+          },
+          map: map
+        });
+
+
+        
+        var styles = [{"featureType":"landscape","elementType":"geometry.fill","stylers":[{"color":"#d3d3d3"}]},{"featureType":"landscape","elementType":"geometry.stroke","stylers":[{"color":"#ffffff"}]},{"featureType":"poi","elementType":"labels.icon","stylers":[{"saturation":-96}]}];
+        
+        map.setOptions({styles: styles});
+      }
+      
+      
+      google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
   </head>
   <body>
     <div id="banner"></div>
