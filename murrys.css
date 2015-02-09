@@ -108,6 +108,17 @@ td {
   height: 400px;
 }
 
+#directions {
+  text-decoration: none;
+}
+#directions > section {
+  color: white;
+  background: grey;
+	border-style:solid;
+	border-color:#bbb #888 #666 #aaa;
+	border-width:3px 4px 4px 3px;
+}
+
 /* * * * * * * * * * * *
  * * * * * * * * * * * *
       601 ~ 800
@@ -220,6 +231,5 @@ td {
     width: 100%; /* Ensures there are at least 2 lines of text, so justification works */
     display: inline-block;
   }
-  
-  
+
 }
