@@ -60,6 +60,7 @@ header > img {
   position: relative;
   top: 5px;
 }
+
 #telephone, section {
   width: 90%;
   margin: auto;
@@ -74,10 +75,10 @@ header > img {
   text-align: center;
 }
 
-
 #header-container, #address-hours-container, section {
   max-width: 1000px;
 }
+
 .section-title {
   color: black;
   margin-bottom: 10px;
@@ -109,19 +110,25 @@ td {
   text-align: left;
 }
 
-#map {
-  height: 400px;
+#directions {
+  border-radius: 0px;
+  padding: 0px;
 }
 
-#directions {
+#directions > a {
+  display: block;
   text-decoration: none;
-}
-#directions > section {
   color: white;
   background: grey;
 	border-style:solid;
-	border-color:#bbb #888 #666 #aaa;
 	border-width:3px 4px 4px 3px;
+	border-color:#bbb #888 #666 #aaa;
+  padding: 20px 0px 20px 0px;
+  height: 100%;
+}
+
+#map {
+  height: 400px;
 }
 
 /* * * * * * * * * * * *
